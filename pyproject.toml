@@ -1,5 +1,5 @@
 [project]
-name = "llm-cache"
+name = "llm-cache-plugin"
 version = "0.1"
 description = "Check whether you've already run this prompt before calling the LLM"
 readme = "README.md"
@@ -16,10 +16,10 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project.urls]
-Homepage = "https://github.com/kevinschaul/llm-cache"
-Changelog = "https://github.com/kevinschaul/llm-cache/releases"
-Issues = "https://github.com/kevinschaul/llm-cache/issues"
-CI = "https://github.com/kevinschaul/llm-cache/actions"
+Homepage = "https://github.com/kevinschaul/llm-cache-plugin"
+Changelog = "https://github.com/kevinschaul/llm-cache-plugin/releases"
+Issues = "https://github.com/kevinschaul/llm-cache-plugin/issues"
+CI = "https://github.com/kevinschaul/llm-cache-plugin/actions"
 
 [project.entry-points.llm]
 cache = "llm_cache"

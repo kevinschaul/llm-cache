@@ -1,9 +1,9 @@
 # llm-cache
 
-[![PyPI](https://img.shields.io/pypi/v/llm-cache.svg)](https://pypi.org/project/llm-cache/)
-[![Changelog](https://img.shields.io/github/v/release/kevinschaul/llm-cache?include_prereleases&label=changelog)](https://github.com/kevinschaul/llm-cache/releases)
-[![Tests](https://github.com/kevinschaul/llm-cache/actions/workflows/test.yml/badge.svg)](https://github.com/kevinschaul/llm-cache/actions/workflows/test.yml)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/kevinschaul/llm-cache/blob/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/llm-cache-plugin.svg)](https://pypi.org/project/llm-cache-plugin/)
+[![Changelog](https://img.shields.io/github/v/release/kevinschaul/llm-cache-plugin?include_prereleases&label=changelog)](https://github.com/kevinschaul/llm-cache-plugin/releases)
+[![Tests](https://github.com/kevinschaul/llm-cache-plugin/actions/workflows/test.yml/badge.svg)](https://github.com/kevinschaul/llm-cache-plugin/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/kevinschaul/llm-cache-plugin/blob/main/LICENSE)
 
 Check whether you've already run this prompt before calling the LLM
 
@@ -12,14 +12,14 @@ Check whether you've already run this prompt before calling the LLM
 Install this plugin in the same environment as [LLM](https://llm.datasette.io/).
 
 ```bash
-llm install llm-cache
+llm install llm-cache-plugin
 ```
 
 ## Usage
 
 This plugin add a `--cache` flag to `llm prompt`.
 
-If `--cache` is specified, the plugin will search your llm database for a previously-saved response for this prompt-system-model combination. If it is found, it returns that text. If not, it passes off to the regular `llm prompt` command.
+If `--cache` is specified, the plugin will search your llm database for a previously-saved response for this prompt-system-model combination. If it is found, it returns that text, saving you time and money. If not, it passes off to the regular `llm prompt` command.
 
 ```bash
 llm 'How many rs are in strawberry? Think very hard.'
