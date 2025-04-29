@@ -17,7 +17,23 @@ llm install llm-cache
 
 ## Usage
 
-This plugin simply adds a new flag to `llm prompt`: `--cache` or `--no-cache`. If `--cache` is specified, the plugin will search your llm database for a previously-saved response for this prompt-system-model combination. If it is found, it returns that text. If not, it passes off to the regular `llm prompt` command.
+This plugin add a `--cache` flag to `llm prompt`.
+
+If `--cache` is specified, the plugin will search your llm database for a previously-saved response for this prompt-system-model combination. If it is found, it returns that text. If not, it passes off to the regular `llm prompt` command.
+
+```bash
+llm 'How many rs are in strawberry? Think very hard.'
+> There are 2 'R's in strawberry
+```
+
+Took 3.01s user 1.45s system 104% cpu 4.280 total
+
+```bash
+llm --cache 'How many rs are in strawberry? Think very hard.'
+> There are 2 'R's in strawberry
+```
+
+Took 2.83s user 1.50s system 152% cpu 2.836 total
 
 ## Development
 
